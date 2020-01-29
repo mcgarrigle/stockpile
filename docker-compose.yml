@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  stockpile:
+    image: server:latest
+    networks:
+      - lan
+  redis:
+    image: redis:latest
+    networks:
+      - lan
+
+networks:
+  lan:
